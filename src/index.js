@@ -20,7 +20,7 @@ const UserRouter = require("../src/routes/UserRouter");
 // Routes
 app.use(UserRouter);
 
-const PORT = process.env.DB_PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 conn.sync().then(() => {
   app.listen(PORT, () => {
