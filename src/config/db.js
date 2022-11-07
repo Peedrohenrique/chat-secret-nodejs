@@ -9,10 +9,4 @@ const sequelize = new Sequelize(
   }
 );
 
-try {
-  console.log("Conectado com sucesso");
-} catch (error) {
-  console.log("Não foi possível conectar" + error);
-}
-
 module.exports = sequelize;
