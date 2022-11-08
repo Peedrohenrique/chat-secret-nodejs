@@ -24,10 +24,14 @@ const UserRouter = require("../src/routes/UserRouter");
 // Routes
 app.use(UserRouter);
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-conn.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`API RODANADO NA PORTA ${PORT}`);
-  });
+// conn.sync().then(() => {
+//   app.listen(PORT, () => {
+//     console.log(`API RODANADO NA PORTA ${PORT}`);
+//   });
+// });
+
+app.listen(port, () => {
+  console.log(`Servidor está funcionado na porta: ${port}`);
 });
